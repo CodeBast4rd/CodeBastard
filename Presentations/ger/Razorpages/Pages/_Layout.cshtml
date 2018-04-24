@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Razorpages</title>
+    <title>@ViewData["Title"] - Razorpages The Presentation</title>
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -20,29 +20,25 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-page="/Index" class="navbar-brand">Razorpages</a>
+                <a asp-page="/Index" class="navbar-brand">Welcome</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-page="/Index">Home</a></li>
-                    <li><a asp-page="/About">About</a></li>
-                    <li><a asp-page="/Contact">Contact</a></li>
+                    <li><a asp-page="./Show/1/Index">1</a></li>
+                    <li><a asp-page="./Show/1/Index">2</a></li>
+                    <li><a asp-page="./Show/1/Index">3</a></li>
+                    <li><a asp-page="./Show/4/Index">4</a></li>
+                    <li><a asp-page="./Show/5/Index">5</a></li>
+                    <li><a asp-page="./Show/6/Index">6</a></li>
+                    <li><a asp-page="./Show/7/Index">7</a></li>
+                    <li><a asp-page="./Show/8/Index">8</a></li>
+                    <li><a asp-page="./Show/9/Index">9</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2017 - Razorpages</p>
-        </footer>
     </div>
 
     <environment include="Development">
