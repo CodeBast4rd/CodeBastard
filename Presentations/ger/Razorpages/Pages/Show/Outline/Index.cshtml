@@ -1,0 +1,12 @@
+﻿@page
+@model RazorPages.Pages.Show.Outline.PresentData
+
+<h2>Outline Models</h2>
+<h3>Und MVVM ähnliches</h3>
+<ul>
+    @foreach(string item in @Model._keyPointList){
+        <li>@item</li>
+    }
+</ul>
+
+<a asp-page="/Show/Outline/Index">Outline Models</a>

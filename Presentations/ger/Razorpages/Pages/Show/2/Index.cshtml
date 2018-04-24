@@ -1,9 +1,30 @@
 ﻿@page
-@{
-    ViewData["Title"] = "About Me! Ich bims";
-    Subheader = "Über mich:";
-}
-<h2>@ViewData["Title"]</h2>
-<h3>@Subheader</h3>
+@using System.Collections.Generic;
+@using Microsoft.AspNetCore.Mvc.RazorPages;
+@model PresentData
+@functions
+{
+    public class PresentData: PageModel {
 
-<p>Use this area to provide additional information.</p>
+        public readonly IEnumerable<string> _keyPointList;
+        
+        public PresenData(){
+            this._keyPointList = new List<string>(){
+                "Klassen und Modelle in Razer Files möglich",
+                "Voller funktionsumfang von c#",
+                "Keine IDE unterstützung",
+                "Fehler erst zur Laufzeit"
+                };
+        }
+
+    }
+}
+<h2>Inline Models</h2>
+<h3>Und anderer Webdeveloper Wahnsinn</h3>
+<ul>
+    @foreach(string item in @Model._keyPointList){
+        <li>@item</li>
+    }
+</ul>
+
+<a asp-page="/Show/2/Index">Inline Models</a>
