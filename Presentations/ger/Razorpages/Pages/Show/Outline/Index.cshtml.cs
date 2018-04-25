@@ -8,10 +8,10 @@ namespace RazorPages.Pages.Show.Outline {
 
         public PresentData () {
             this._keyPointList = new List<string> () {
-                "Klassen und Modelle in Razer Files möglich",
-                "Voller funktionsumfang von c#",
-                "Keine IDE unterstützung",
-                "Fehler erst zur Laufzeit"
+                "Trennung der View und des Models",
+                "Gesamtes C# Toolset",
+                "Erhöhte Lesbarkeit",
+                "Leichtere Fehleranalyse vor der Ausführungs"
             };
         }
 
