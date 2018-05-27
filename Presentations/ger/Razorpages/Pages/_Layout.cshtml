@@ -19,11 +19,9 @@
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
-            <div class="navbar-header">
-                <a asp-page="/Index" class="navbar-brand">Welcome</a>
-            </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
+                    <li><a asp-page="/Index">Welcome</a></li> 
                     <li><a asp-page="/Show/AboutMe/Index">1</a></li>
                     <li><a asp-page="/Show/Inline/Index">2</a></li>
                     <li><a asp-page="/Show/Outline/Index">3</a></li>
@@ -34,7 +32,7 @@
             </div>
         </div>
     </nav>
-    <div class="container body-content">
+    <div class="present container">
         @RenderBody()
     </div>
 
